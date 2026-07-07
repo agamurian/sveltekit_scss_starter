@@ -6,9 +6,10 @@ $primarycolor: #2b6f4e;
 $primarycolor: #bb4f5e;
 $primarycolor: #bb8279;
 $primarycolor: #f7d874;
-$secondarycolor: #474874;
 $secondarycolor: #a73143;
 $primarycolor: #ab726f;
+$secondarycolor: #178864;
+$primarycolor: #77a998;
 
 $backgroundcolor: $light;
 $frontcolor: $dark;
@@ -77,6 +78,12 @@ body{
   color: $frontcolor;
   padding: 50px;
 }
+a {
+  color: $secondarycolor;
+  &:hover {
+    color: $primarycolor;
+  }
+}
 .blocks {
   display: inline;
   max-width: 100%;
@@ -113,12 +120,6 @@ code {
   box-sizing: border-box;
   max-width: 100%;
   padding-bottom: calc($fontsize/2);
-}
-a {
-  color: $secondarycolor;
-  &:hover {
-    color: $primarycolor;
-  }
 }
 p {
   line-height: $height; 
