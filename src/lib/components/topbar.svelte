@@ -17,7 +17,5 @@
   <div class="right">
   search
   </div>
-  <!--
-	<div class="overdrop">projects > current title > svelte</div>
-  -->
+  <div class="overdrop"><a href="/">projects</a> > <a href="/">current title</a> > <a href="/">svelte</a></div>
 </div>

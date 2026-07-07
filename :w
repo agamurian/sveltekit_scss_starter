@@ -1,27 +1,19 @@
-$light: #dececc;
 $light: #ffffff;
+$light: #dececc;
 $dark: #222222;
-$dark: #000000;
 $primarycolor: #2b6f4e;
-$primarycolor: #bb4f5e;
-$primarycolor: #bb8279;
-$primarycolor: #f7d874;
-$secondarycolor: #474874;
-$secondarycolor: #a73143;
-$primarycolor: #ab726f;
 
 $backgroundcolor: $light;
 $frontcolor: $dark;
 $neutral: #8888;
 
-// Dark Theme:
 // $backgroundcolor: $dark;
 // $frontcolor: $light;
 
 $bordercolor: $primarycolor;
 
-$borderwifth: 2px;
-$rounded: 6px;
+$borderwifth: 4px;
+$rounded: 2px;
 
 $sans: "Inter";
 $monospace: "Cousine";
@@ -29,15 +21,15 @@ $serif: "Tex Gyre Schola";
 $header: $sans;
 $basefont: $serif;
 
-$factor: 1.0;
-$height: 1.5;
+$factor: 1.2;
+$height: 1.6;
 $fontsizeh1: calc(60px * $factor);
 $fontsizeh2: calc(40px * $factor);
 $fontsizeh3: calc(25px * $factor);
 $fontsizeh4: calc(22px * $factor);
 $fontsizeh5: calc(21px * $factor);
 $fontsizeh6: calc(20px * $factor);
-$fontsize: calc(20px * $factor);
+$fontsize: calc(18px * $factor);
 
 $margin: 56px;
 $size1: 2px;
@@ -53,7 +45,6 @@ $containerw1: 900px;
 $containerfull: 100%;
 
 .container-centered{
-  padding-top: 30px;
   margin: auto;
   max-width: $containerw1;
   overflow: hidden;
@@ -64,11 +55,6 @@ $containerfull: 100%;
   box-sizing: border-box;
   font-feature-settings: "kern";
   text-rendering: optimizelegibility;
-}
-
-::selection{
-  background-color: $primarycolor;
-  color: $light
 }
 body{
   background-color: $backgroundcolor;
@@ -94,19 +80,12 @@ body{
   margin: auto;
   margin-top: 0;
   margin-bottom: $margin;
-  padding: 18px 36px;
+  padding: $size2 $size4 $size2 $size4;
   background-color: $frontcolor;
   color: $backgroundcolor;
 }
-.card a{
-  color: $primarycolor;
-  &:hover {
-    color: $secondarycolor;
-  }
-}
 code {
   font-family: $monospace;
-  font-weight: 600;
 }
 .block {
   margin: 0;
@@ -115,16 +94,12 @@ code {
   padding-bottom: calc($fontsize/2);
 }
 a {
-  color: $secondarycolor;
-  &:hover {
-    color: $primarycolor;
-  }
+  color: $primarycolor;
 }
 p {
   line-height: $height; 
   font-size: $fontsize;
   font-family: $basefont;
-  text-align: justify;
 }
 h1 {
   font-weight: 900;
@@ -182,11 +157,11 @@ code {
     flex-wrap: wrap;
 		left: 0;
 		right: 0;
-    color: $light;
-    font-weight: 700;
+    color: white;
+    font-weight: 600;
     background-color: black;
-    font-size: 14px;
-    padding: 3px 18px 3px 18px;
+    font-size: 15px;
+    padding: 3px 10px 3px 10px;
     text-transform: uppercase;
     line-height: 1.9;
   }
@@ -197,25 +172,13 @@ code {
 		top: 0;
   }
   .nav a {
-    padding: 0px 2px;
-    border-radius: 2px;
-    color: $light;
+    color: white;
     text-decoration: 1px underline dotted #8888;
-  &:hover {
-    color: $primarycolor;
-  }
-  }
-  .overdrop a {
-    color: #888;
-    &:hover {
-      color: $light;
-    }
-
   }
   .nav ul {
     display: flex;
     margin: 0;
-    gap: $size4;
+    gap: 30px;
     list-style-type: none;
     padding-left: 0;
     padding-right:0;
