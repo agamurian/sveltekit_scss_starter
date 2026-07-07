@@ -16,8 +16,8 @@ $frontcolor: $dark;
 $neutral: #8888;
 
 // Dark Theme:
-// $backgroundcolor: $dark;
-// $frontcolor: $light;
+$backgroundcolor: $dark;
+$frontcolor: $light;
 
 $bordercolor: $primarycolor;
 
@@ -27,18 +27,18 @@ $rounded: 6px;
 $sans: "Inter";
 $monospace: "Cousine";
 $serif: "Tex Gyre Schola";
-$header: $sans;
+$header: $serif;
 $basefont: $serif;
 
 $factor: 1.0;
 $height: 1.5;
-$fontsizeh1: calc(60px * $factor);
-$fontsizeh2: calc(40px * $factor);
-$fontsizeh3: calc(25px * $factor);
-$fontsizeh4: calc(22px * $factor);
-$fontsizeh5: calc(21px * $factor);
-$fontsizeh6: calc(20px * $factor);
-$fontsize: calc(20px * $factor);
+$fontsizeh1: calc(42px * $factor + 0.8vw);
+$fontsizeh2: calc(35px * $factor + 0.6vw);
+$fontsizeh3: calc(28px * $factor + 0.4vw);
+$fontsizeh4: calc(24px * $factor + 0.2vw);
+$fontsizeh5: calc(22px * $factor + 0.1vw);
+$fontsizeh6: calc(19px * $factor);
+$fontsize: calc(19px * $factor);
 
 $margin: 56px;
 $size1: 2px;
@@ -121,6 +121,14 @@ code {
   max-width: 100%;
   padding-bottom: calc($fontsize/2);
 }
+hr {
+  margin-top: $fontsize;
+  margin-bottom: calc($fontsize * 2);
+  border-color: $frontcolor;
+  color: $frontcolor;
+  border-radius: 4px;
+  border: 2px #8888 solid;
+}
 p {
   line-height: $height; 
   font-size: $fontsize;
@@ -128,42 +136,42 @@ p {
   text-align: justify;
 }
 h1 {
-  font-weight: 900;
+  font-weight: 200;
   line-height: 1; 
   margin-top: calc($fontsizeh1 / 2);
   font-size: $fontsizeh1;
   font-family: $header;
 }
 h2 {
-  font-weight: 800;
+  font-weight: 300;
   line-height: 1; 
   margin-top: calc($fontsizeh2 / 2);
   font-size: $fontsizeh2;
   font-family: $header;
 }
 h3 {
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1; 
   margin-top: calc($fontsizeh3 / 2);
   font-size: $fontsizeh3;
   font-family: $header;
 }
 h4 {
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1; 
   margin-top: calc($fontsizeh4 / 2);
   font-size: $fontsizeh4;
   font-family: $header;
 }
 h5 {
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1; 
   margin-top: calc($fontsizeh5 / 2);
   font-size: $fontsizeh5;
   font-family: $header;
 }
 h6 {
-  font-weight: 400;
+  font-weight: 900;
   line-height: 1; 
   margin-top: calc($fontsizeh6 / 2);
   font-size: $fontsizeh6;
