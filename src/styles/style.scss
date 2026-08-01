@@ -1,7 +1,9 @@
 $light: #dececc;
+$light: #ededed;
 $light: #ffffff;
 $dark: #222222;
 $dark: #000000;
+$dark: #1d1d1d;
 $primarycolor: #2b6f4e;
 $primarycolor: #bb4f5e;
 $primarycolor: #bb8279;
@@ -10,37 +12,40 @@ $secondarycolor: #a73143;
 $primarycolor: #ab726f;
 $secondarycolor: #178864;
 $primarycolor: #77a998;
+$secondarycolor: #3a5010;
+$primarycolor: #aad050;
 
 $backgroundcolor: $light;
 $frontcolor: $dark;
 $neutral: #8888;
 
 // Dark Theme:
-// $backgroundcolor: $dark;
-// $frontcolor: $light;
+//$backgroundcolor: $dark;
+//$frontcolor: $light;
 
-$bordercolor: $primarycolor;
+$bordercolor: $light;
 
 $borderwifth: 2px;
-$rounded: 6px;
+$rounded: 10px;
 
-$sans: "Inter";
-$monospace: "Cousine";
-$serif: "Tex Gyre Schola";
-$header: $serif;
+$sans: "Bricolage Grotesque";
+$sans: "Golos Text";
+$monospace: "Ubuntu Mono";
+$serif: "C059";
+$header: $sans;
 $basefont: $serif;
 
-$factor: 1.0;
+$factor: 0.85;
 $height: 1.5;
-$fontsizeh1: calc(42px * $factor + 0.8vw);
-$fontsizeh2: calc(35px * $factor + 0.6vw);
-$fontsizeh3: calc(28px * $factor + 0.4vw);
-$fontsizeh4: calc(24px * $factor + 0.2vw);
-$fontsizeh5: calc(22px * $factor + 0.1vw);
-$fontsizeh6: calc(19px * $factor);
-$fontsize: calc(19px * $factor);
+$fontsizeh1: calc(42px * $factor + 1.0vw);
+$fontsizeh2: calc(35px * $factor + 0.8vw);
+$fontsizeh3: calc(28px * $factor + 0.6vw);
+$fontsizeh4: calc(24px * $factor + 0.4vw);
+$fontsizeh5: calc(22px * $factor + 0.2vw);
+$fontsizeh6: calc(19px * $factor + 0.1vw);
+$fontsize: calc(18px * $factor + 0.1vw);
 
-$margin: 56px;
+$margin: 28px;
 $size1: 2px;
 $size2: 4px;
 $size3: 8px;
@@ -68,7 +73,7 @@ $containerfull: 100%;
 }
 
 ::selection{
-  background-color: $primarycolor;
+  background-color: $secondarycolor;
   color: $light
 }
 body{
@@ -76,7 +81,8 @@ body{
   max-width: 100vw;
   height: 100vh;
   color: $frontcolor;
-  padding: 50px;
+  padding: $margin;
+  margin-top: 2em;
 }
 a {
   color: $secondarycolor;
@@ -90,15 +96,18 @@ a {
   flex-direction: raw;
   padding: 0;
   gap: $size6;
+  background-color: black;
 }
 .cards {
-  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: $margin;
+  text-transform: none !important;
 }
 .card {
+  flex:1;
   border: $borderwifth $bordercolor solid;
   border-radius: $rounded;
-  width: 100%;
-  margin: auto;
   margin-top: 0;
   margin-bottom: $margin;
   padding: 18px 36px;
@@ -111,18 +120,38 @@ a {
     color: $secondarycolor;
   }
 }
+.cardcode {
+  border: $borderwifth #000d solid;
+  border-radius: $rounded;
+  width: 100%;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: $margin;
+  padding: 18px 24px;
+  background-color: #000d;
+  color: $light;
+  flex:1;
+  font-size: calc($fontsize * 0.75);
+}
 code {
   font-family: $monospace;
-  font-weight: 600;
+  font-weight: 500;
 }
 .block {
   margin: 0;
   box-sizing: border-box;
   max-width: 100%;
-  padding-bottom: calc($fontsize/2);
+  padding-bottom: calc($fontsize/4);
+}
+.blockcard {
+  flex:1;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  padding-bottom: calc($fontsize/4);
 }
 hr {
-  margin-top: $fontsize;
+  margin-top: calc($fontsize * 2);
   margin-bottom: calc($fontsize * 2);
   border-color: $frontcolor;
   color: $frontcolor;
@@ -135,51 +164,58 @@ p {
   font-family: $basefont;
   text-align: justify;
 }
+
 h1 {
-  font-weight: 200;
+  font-weight: 900;
   line-height: 1; 
   margin-top: calc($fontsizeh1 / 2);
+  margin-bottom: calc($fontsizeh1 / 2);
   font-size: $fontsizeh1;
   font-family: $header;
 }
 h2 {
-  font-weight: 300;
+  font-weight: 800;
   line-height: 1; 
   margin-top: calc($fontsizeh2 / 2);
+  margin-bottom: calc($fontsizeh2 / 2);
   font-size: $fontsizeh2;
   font-family: $header;
 }
 h3 {
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1; 
   margin-top: calc($fontsizeh3 / 2);
+  margin-bottom: calc($fontsizeh3 / 2);
   font-size: $fontsizeh3;
   font-family: $header;
 }
 h4 {
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1; 
   margin-top: calc($fontsizeh4 / 2);
+  margin-bottom: calc($fontsizeh4 / 2);
   font-size: $fontsizeh4;
   font-family: $header;
 }
 h5 {
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1; 
   margin-top: calc($fontsizeh5 / 2);
+  margin-bottom: calc($fontsizeh5 / 2);
   font-size: $fontsizeh5;
   font-family: $header;
 }
 h6 {
-  font-weight: 900;
+  font-weight: 400;
   line-height: 1; 
   margin-top: calc($fontsizeh6 / 2);
+  margin-bottom: calc($fontsizeh6 / 2);
   font-size: $fontsizeh6;
   font-family: $header;
 }
 code {
-  font-size: calc($fontsize * 0.8);
   font-family: $monospace;
+  color: #def153;
 }
   .overdrop{
     width: 100%;
@@ -192,18 +228,42 @@ code {
 		left: 0;
 		right: 0;
     color: $light;
-    font-weight: 700;
+    font-weight: 800;
     background-color: black;
-    font-size: 14px;
-    padding: 3px 18px 3px 18px;
+    background-color: #000c;
+    font-size: 13px;
+    padding: 5px 15px 5px 15px;
     text-transform: uppercase;
-    line-height: 1.9;
+    line-height: 2.0;
+    font-family: $sans;
   }
   .bottom{
 		bottom: 0;
   }
+  .uptop{
+		position: fixed;
+    top:0;
+		left: 0;
+		right: 0;
+    width: 100dvw;
+    margin-top: -60px;
+    height: 120px;
+    background-image: linear-gradient(to bottom, $backgroundcolor,$backgroundcolor, #0000);
+    pointer-events: none;
+  }
   .top{
-		top: 0;
+		top: 20px;
+    left: 20px;
+    right: 20px;
+		top: 0px;
+    left: 0px;
+    right: 0px;
+    border-radius: $rounded;
+    border-radius: 0;
+    max-width: 1000px;
+    max-width: 100%;
+    margin:auto;
+    backdrop-filter: blur(10px);
   }
   .nav a {
     padding: 0px 2px;
@@ -247,9 +307,11 @@ code {
 		flex: 1;
 		margin-left: 30px;
 		margin-right: 3px;
-		text-align: center;
-    font-family: $sans;
 	}
+  .center p{
+    font-size: calc($fontsize * 0.85);
+    font-weight: 500;
+  }
 	.overdrop {
 		width: 100%;
 		color: gray;
