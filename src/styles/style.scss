@@ -356,3 +356,19 @@ code {
     break-inside:avoid;
   }
   }
+@page {
+  &:first{
+    margin-top: 2in;
+  }
+  /*
+  &:left {
+    margin-left: 1.5in; [> For binding <]
+  }
+  &:right {
+    margin-right: 1.25in; [> Balanced layout <]
+  }
+  margin: 1in;
+  /* size: A3;  /* Explicit page size */
+}
+
+
