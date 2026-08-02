@@ -1,5 +1,5 @@
 // vite.config.js
-import adapter from '@sveltejs/adapter-node';
+import adapter from '@sveltejs/adapter-static';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 import {mdsvex} from 'mdsvex';

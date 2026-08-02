@@ -49,7 +49,7 @@ with work Expirience
 <br/>
 
 
-<a href="/Andrey_Golovin_Technical_Artist_CV.pdf">
+<a href="/Andrey_Golovin_CV.pdf">
 <span class="button">
 download PDF
 </span></a>
@@ -65,7 +65,7 @@ download PDF
 
 with work Expirience
 <br/>
-<a href="/Andrey_Golovin_Technical_Artist_CV.pdf">
+<a href="/Andrey_Golovin_CV.pdf">
 <span class="button">
 download PDF
 </span></a>
