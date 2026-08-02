@@ -1,4 +1,4 @@
-<section class="container-centered">
+<div class="container-centered">
 <h1>How this website resolves typography</h1>
 <h6>
 Short intruduction to typography
@@ -11,7 +11,7 @@ Rule of thumb: it looks good
 Counterintuitevely, this is not what you would thought in this kind of situaltion
 </p>
 <div class="cards">
-<div class="card">
+<div class="blockcard">
 <h4>
 Fonts:
 </h4>
@@ -25,7 +25,7 @@ Fonts:
 <p>
   how to choose fonts, which suits each other:
 </p>
-  <h1 style="font-family: Golos Text; font-size:2em+1vw">Golos Text</h1>
+  <h1 style="font-family: Inter; font-size:2em+1vw">Inter</h1>
   <h1 style="font-family: C059; font-size:4em+4vw">C059</h1>
   <h5 style="font-family: Ubuntu Mono; font-size:4em+4vw">Ubuntu Mono</h5>
 </div>
@@ -39,6 +39,9 @@ Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publ
 </p>
 </div>
 </div>
+
+<section>
+<br/>
 <p class="cardcode ">
 <code style="white-space: pre">
 $sans: "Bricolage Grotesque";
@@ -59,4 +62,7 @@ $fontsizeh6: calc(19px * $factor + 0.1vw);
 $fontsize: calc(18px * $factor + 0.1vw);
 </code>
 </p>
+<br/>
 </section>
+
+</div>

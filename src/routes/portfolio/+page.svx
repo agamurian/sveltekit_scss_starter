@@ -1,0 +1,12 @@
+
+# Portfolio
+###### some examples of work from previous expirience
+
+### Tools:
+##### blender animation addon:
+
+##### blender validation addon:
+
+##### 3Dsmax qt script installer
+
+##### 

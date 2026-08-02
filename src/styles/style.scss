@@ -1,19 +1,7 @@
-$light: #dececc;
-$light: #ededed;
 $light: #ffffff;
-$dark: #222222;
-$dark: #000000;
 $dark: #1d1d1d;
-$primarycolor: #2b6f4e;
-$primarycolor: #bb4f5e;
-$primarycolor: #bb8279;
-$primarycolor: #f7d874;
-$secondarycolor: #a73143;
-$primarycolor: #ab726f;
-$secondarycolor: #178864;
-$primarycolor: #77a998;
 $secondarycolor: #3a5010;
-$primarycolor: #aad050;
+$primarycolor: #5b6f4e;
 
 $backgroundcolor: $light;
 $frontcolor: $dark;
@@ -28,22 +16,29 @@ $bordercolor: $light;
 $borderwifth: 2px;
 $rounded: 10px;
 
-$sans: "Bricolage Grotesque";
-$sans: "Golos Text";
+//$sans: "Rubik";
+//$sans: "Bricolage Grotesque";
+//$sans: "Golos Text";
+$sans: "Inter";
+
 $monospace: "Ubuntu Mono";
+
+//$serif: "Libertinus Serif";
+//$serif: "P052";
 $serif: "C059";
+
 $header: $sans;
 $basefont: $serif;
 
-$factor: 0.85;
+$factor: 1.0;
 $height: 1.5;
-$fontsizeh1: calc(42px * $factor + 1.0vw);
-$fontsizeh2: calc(35px * $factor + 0.8vw);
-$fontsizeh3: calc(28px * $factor + 0.6vw);
-$fontsizeh4: calc(24px * $factor + 0.4vw);
-$fontsizeh5: calc(22px * $factor + 0.2vw);
-$fontsizeh6: calc(19px * $factor + 0.1vw);
-$fontsize: calc(18px * $factor + 0.1vw);
+$fontsizeh1: calc(35px * $factor);
+$fontsizeh2: calc(28px * $factor);
+$fontsizeh3: calc(24px * $factor);
+$fontsizeh4: calc(22px * $factor);
+$fontsizeh5: calc(20px * $factor);
+$fontsizeh6: calc(18px * $factor);
+$fontsize: calc(16px * $factor);
 
 $margin: 28px;
 $size1: 2px;
@@ -55,11 +50,11 @@ $size6: 50px;
 $size7: 100px;
 $size8: 300px;
 
-$containerw1: 900px;
+$containerw1: 1000px;
 $containerfull: 100%;
 
 .container-centered{
-  padding-top: 30px;
+  padding-top: 0px;
   margin: auto;
   max-width: $containerw1;
   overflow: hidden;
@@ -79,12 +74,12 @@ $containerfull: 100%;
 body{
   background-color: $backgroundcolor;
   max-width: 100vw;
-  height: 100vh;
   color: $frontcolor;
   padding: $margin;
-  margin-top: 2em;
+  margin-top: 10px;
 }
 a {
+  transition: 0.15s ease;
   color: $secondarycolor;
   &:hover {
     color: $primarycolor;
@@ -132,6 +127,9 @@ a {
   color: $light;
   flex:1;
   font-size: calc($fontsize * 0.75);
+  @media print{
+    break-inside: awoid;
+  }
 }
 code {
   font-family: $monospace;
@@ -163,12 +161,19 @@ p {
   font-size: $fontsize;
   font-family: $basefont;
   text-align: justify;
+  margin-top:calc($fontsize/2);
+  margin-bottom:calc($fontsize/2);
+}
+ul {
+  line-height: $height; 
+  font-size: $fontsize;
+  font-family: $basefont;
+  text-align: justify;
 }
 
 h1 {
   font-weight: 900;
   line-height: 1; 
-  margin-top: calc($fontsizeh1 / 2);
   margin-bottom: calc($fontsizeh1 / 2);
   font-size: $fontsizeh1;
   font-family: $header;
@@ -176,7 +181,6 @@ h1 {
 h2 {
   font-weight: 800;
   line-height: 1; 
-  margin-top: calc($fontsizeh2 / 2);
   margin-bottom: calc($fontsizeh2 / 2);
   font-size: $fontsizeh2;
   font-family: $header;
@@ -184,7 +188,6 @@ h2 {
 h3 {
   font-weight: 700;
   line-height: 1; 
-  margin-top: calc($fontsizeh3 / 2);
   margin-bottom: calc($fontsizeh3 / 2);
   font-size: $fontsizeh3;
   font-family: $header;
@@ -192,7 +195,7 @@ h3 {
 h4 {
   font-weight: 600;
   line-height: 1; 
-  margin-top: calc($fontsizeh4 / 2);
+  margin-top: calc($fontsizeh4/2);
   margin-bottom: calc($fontsizeh4 / 2);
   font-size: $fontsizeh4;
   font-family: $header;
@@ -200,8 +203,8 @@ h4 {
 h5 {
   font-weight: 500;
   line-height: 1; 
-  margin-top: calc($fontsizeh5 / 2);
-  margin-bottom: calc($fontsizeh5 / 2);
+  margin-top: calc($fontsizeh5);
+  margin-bottom: calc($fontsizeh5);
   font-size: $fontsizeh5;
   font-family: $header;
 }
@@ -241,6 +244,9 @@ code {
 		bottom: 0;
   }
   .uptop{
+    @media print{
+    display:none 
+    }
 		position: fixed;
     top:0;
 		left: 0;
@@ -252,6 +258,9 @@ code {
     pointer-events: none;
   }
   .top{
+    @media print{
+    display:none 
+    }
 		top: 20px;
     left: 20px;
     right: 20px;
@@ -282,6 +291,8 @@ code {
 
   }
   .nav ul {
+    font-family: $sans;
+    font-size: calc($fontsize * 0.85);
     display: flex;
     margin: 0;
     gap: $size4;
@@ -290,6 +301,7 @@ code {
     padding-right:0;
     margin-right: 0;
     align-items: right;
+    font-weight: 700;
     
   }
 	.left {
@@ -319,4 +331,28 @@ code {
 	}
   .notes{
     text-transform: none;
+  }
+  .flex{
+  gap: $margin;
+  display: flex;
+}
+  .button{
+  transition: 0.15s ease;
+    padding: 10px 15px;
+    background-color: $primarycolor;
+    &:hover{
+    background-color: $secondarycolor;
+  }
+    color: $light;
+		bottom: 0;
+    font-family: $sans;
+    font-size: $fontsize;
+    font-weight: 500;
+    border-radius: calc($rounded/2);
+  }
+  section{
+  @media print{
+    page-break-inside:avoid;
+    break-inside:avoid;
+  }
   }

@@ -1,18 +1,23 @@
 <div class="uptop"/>
 <div class="nav top">
+
   <div class="left">
     <ul>
       <li>
         <a href="/">main</a>
       </li>
       <li>
-        <a href="/">projects</a>
+        <a href="/cv">CV</a>
       </li>
       <li>
-        <a href="/">portfolio</a>
+        <a href="/portfolio">portfolio</a>
+      </li>
+      <li>
+        <a href="/typography">typography</a>
       </li>
     </ul>
-  </div>
+    </div>
+
   <div class="center">
     <!--
     <div class="cards">
@@ -38,10 +43,17 @@
     -->
   </div>
   <div class="right">
-    search
-  </div>
-  <div class="overdrop"><a href="/">projects</a> > <a href="/">current title</a> > <a href="/">svelte</a>
+    <ul>
+      <li>
+        <a href="javascript:if(window.print)window.print()">print</a>
+      </li>
+      <li>
+        <a href="/theme">theme</a>
+      </li>
+    </ul>
+    </div>
     <!--
+  <div class="overdrop"><a href="/">projects</a> > <a href="/">current title</a> > <a href="/">svelte</a>
     <div class="cards">
       <div class="blockcard">
         <h4>
@@ -52,6 +64,6 @@
         </p>
       </div>
     </div>
-    -->
   </div>
+    -->
 </div>

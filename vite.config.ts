@@ -1,22 +1,33 @@
+// vite.config.js
 import adapter from '@sveltejs/adapter-node';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
+import {mdsvex} from 'mdsvex';
+import mdsvexConfig from './mdsvex.config.js';
 
 export default defineConfig({
+
 	plugins: [
 		sveltekit({
+
 			compilerOptions: {
-				// Force runes mode for the project, except for libraries. Can be removed in svelte 6.
+
 				runes: ({ filename }) =>
 					filename.split(/[/\\]/).includes('node_modules') ? undefined : true,
 				experimental: { async: true }
+
 			},
 			adapter: adapter(),
 			experimental: {
 				remoteFunctions: true,
 				handleRenderingErrors: true,
 				forkPreloads: true
-			}
-		})
+			},
+  extensions: [
+    '.svelte',
+    '.svx'
+  ],
+  preprocess: mdsvex(mdsvexConfig)
+		}),
 	]
 });

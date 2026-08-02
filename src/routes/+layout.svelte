@@ -12,7 +12,9 @@
 </svelte:head>
 
 <Topbar />
-{@render children()}
+<div class="container-centered">
+  {@render children()}
+</div>
 
 <style lang="scss">
 	@import '../styles/style.scss';
