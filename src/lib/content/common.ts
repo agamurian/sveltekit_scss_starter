@@ -3,9 +3,9 @@ interface translation {ru: any, en: any}
 
 export const menu: Array<menuItem> = [
   {href: '/', en: 'Home', ru: 'Главная'},
-  {href: '/about', en: 'About me', ru: 'Обо мне'},
-  {href: '/projects', en: 'Projects', ru: 'Проекты'},
-  {href: '/gallery', en: 'Gallery', ru: 'Галерея'},
+  {href: '/cv', en: 'CV', ru: 'Обо мне'},
+  {href: '/portfolio', en: 'Portfolio', ru: 'Проекты'},
+  {href: '/typography', en: 'Typography', ru: 'Галерея'},
   {href: '/blog', en: 'Blog', ru: 'Блог'}
 ];
 
