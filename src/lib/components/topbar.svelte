@@ -6,10 +6,17 @@
 	import { page } from '$app/stores';
   import { onMount } from 'svelte';
  // let urs = $state([{text:"/",url:"/"}])
-  let menuitem = 0
-  let curr = $derived($page.url.toString().split("/").slice(3))
-  let urs = $derived(curr
-  )
+let curr = $derived($page.url.toString().split("/").slice(3))
+
+let urs = $derived.by(() => {
+  let prev = ""
+  let els = []
+  for (const url of curr) {
+    prev += "/" + url
+    els.push({ text: url, url: prev })
+  }
+  return els
+})
 
   function toggleTheme() {
     document.documentElement.classList.toggle('dark-theme');
@@ -91,9 +98,10 @@
     </ul>
     </div>
     <div class="overdrop">
-        <a href="/">Home</a> / 
-      {#each urs as ur}
-        <a href="{ur}">{ur}</a>
+        <a href="/">Home</a>
+        {#each urs as ur}
+          / 
+        <a href="{ur.url}">{ur.text}</a>
       {/each} 
       <!--
     <div class="cards">
