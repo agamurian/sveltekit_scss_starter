@@ -2,9 +2,9 @@
   let lastScrollTop = 0;
   let hideNav = $state(false)
   let marginTop = $state(0)
+	import { menu } from '$lib/content/common';
+	import { page } from '$app/stores';
 
-
-	import NavbarMenu from './NavbarMenu.svelte';
 </script>
 
 <svelte:window
@@ -28,22 +28,10 @@
     <ul>
 
 			{#each menu as item}
-				<a class="mx-5" class:active-route={item.href == $page.route.id} href={item.href}
-					>{item[$lang]}</a
+				<a class="menuitem" class:active-route={item.href == $page.route.id} href={item.href}
+       ><nobr>{item['en']}</nobr></a
 				>
 			{/each}
-      <li>
-        <a href="/">main</a>
-      </li>
-      <li>
-        <a href="/cv">CV</a>
-      </li>
-      <li>
-        <a href="/portfolio">portfolio</a>
-      </li>
-      <li>
-        <a href="/typography">typography</a>
-      </li>
     </ul>
     </div>
 

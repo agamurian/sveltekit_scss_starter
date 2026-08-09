@@ -261,6 +261,14 @@ code {
     background-image: linear-gradient(to bottom, $backgroundcolor,$backgroundcolor, #0000);
     pointer-events: none;
   }
+  .menuitem{
+    transition: 0.25s ease;
+    text-shadow: 1px 1px 20px #8888;
+    background: transparent;
+    &:hover{
+    text-shadow: 1px 1px 20px #8880;
+    }
+  }
   .top{
     @media print{
     display:none 
