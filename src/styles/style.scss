@@ -89,7 +89,7 @@ body{
   margin-top: 10px;
 }
 a {
-  transition: 0.15s ease;
+  transition: 0.35s ease;
   color: $secondarycolor;
   &:hover {
     color: $primarycolor;
@@ -231,12 +231,16 @@ code {
   color: #def153;
 }
   .overdrop{
+    transition: 0.75s ease;
+    opacity: 0;
+    &:hover{
+      opacity: 1;
+    }
     width: 100%;
     color: gray;
     margin-bottom: -3px;
   }
 	.nav {
-    transition: 0.15s ease-in;
 		position: fixed;
     display: flex;
     flex-wrap: wrap;
@@ -246,6 +250,8 @@ code {
     font-weight: 800;
     background-color: var(--frontcolor);
     background-color: var(--backgroundcolor);
+    background-color: var(--backgroundcolor);
+    opacity: 0.9;
     font-size: 13px;
     padding: 5px 15px 5px 15px;
     text-transform: uppercase;
@@ -271,7 +277,7 @@ code {
     pointer-events: none;
   }
   .menuitem{
-    transition: 0.25s ease;
+    transition: 0.35s ease;
     text-shadow: 1px 1px 20px #8888;
     background: transparent;
     &:hover{
@@ -311,6 +317,7 @@ code {
   .nav ul {
     font-family: $sans;
     font-size: calc($fontsize * 0.85);
+    font-size: 13px;
     display: flex;
     margin: 0;
     gap: $size4;
@@ -355,7 +362,7 @@ code {
   display: flex;
 }
   .button{
-  transition: 0.15s ease;
+  transition: 0.35s ease;
     padding: 10px 15px;
     background-color: $primarycolor;
     &:hover{

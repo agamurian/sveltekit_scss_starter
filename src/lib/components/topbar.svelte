@@ -5,6 +5,11 @@
 	import { menu } from '$lib/content/common';
 	import { page } from '$app/stores';
   import { onMount } from 'svelte';
+ // let urs = $state([{text:"/",url:"/"}])
+  let menuitem = 0
+  let curr = $derived($page.url.toString().split("/").slice(3))
+  let urs = $derived(curr
+  )
 
   function toggleTheme() {
     document.documentElement.classList.toggle('dark-theme');
@@ -44,9 +49,9 @@
     <ul>
 
 			{#each menu as item}
-				<a class="menuitem" class:active-route={item.href == $page.route.id} href={item.href}
-       ><nobr>{item['en']}</nobr></a
-				>
+				<a class="menuitem" class:active-route={item.href == $page.route.id} href={item.href}>
+          <nobr>{item['en']}</nobr>
+        </a>
 			{/each}
     </ul>
     </div>
@@ -85,7 +90,11 @@
       </li>
     </ul>
     </div>
-  <div class="overdrop"><a href="/">projects</a> > <a href="/">current title</a> > <a href="/">svelte</a>
+    <div class="overdrop">
+        <a href="/">Home</a> / 
+      {#each urs as ur}
+        <a href="{ur}">{ur}</a>
+      {/each} 
       <!--
     <div class="cards">
       <div class="blockcard">
