@@ -4,7 +4,23 @@
   let marginTop = $state(0)
 	import { menu } from '$lib/content/common';
 	import { page } from '$app/stores';
+  import { onMount } from 'svelte';
 
+  function toggleTheme() {
+    document.documentElement.classList.toggle('dark-theme');
+    console.log("t")
+    localStorage.setItem(
+      'theme',
+      document.documentElement.classList.contains('dark-theme') ? 'dark' : 'light'
+    );
+  }
+
+  onMount(() => {
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark') {
+      document.documentElement.classList.add('dark-theme');
+    }
+  });
 </script>
 
 <svelte:window
@@ -20,9 +36,9 @@
       marginTop = 0;
     }
 	}}
-/>
+  />
 
-<div class="uptop"/>
+  <div class="uptop" />
 <div class="nav top" style="margin-top: {marginTop}px">
   <div class="left">
     <ul>
@@ -65,7 +81,7 @@
         <a href="javascript:if(window.print)window.print()">print</a>
       </li>
       <li>
-        <a href="/theme">theme</a>
+        <a href="#" onclick={(e) => { e.preventDefault(); toggleTheme(); }}>theme</a>
       </li>
     </ul>
     </div>

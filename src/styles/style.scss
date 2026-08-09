@@ -7,9 +7,18 @@ $backgroundcolor: $light;
 $frontcolor: $dark;
 $neutral: #8888;
 
-// Dark Theme:
-//$backgroundcolor: $dark;
-//$frontcolor: $light;
+
+// Light theme (default)
+:root {
+  --backgroundcolor: #{$light};
+  --frontcolor: #{$dark};
+}
+
+// Dark theme (applied when .dark-theme class is on <html>)
+:root.dark-theme {
+  --backgroundcolor: #{$dark};
+  --frontcolor: #{$light};
+}
 
 $bordercolor: $light;
 
@@ -72,9 +81,9 @@ $containerfull: 100%;
   color: $light
 }
 body{
-  background-color: $backgroundcolor;
+  background-color: var(--backgroundcolor);
   max-width: 100vw;
-  color: $frontcolor;
+  color: var(--frontcolor);
   padding: $margin;
   padding-top: calc(50px + $margin);
   margin-top: 10px;
@@ -107,8 +116,8 @@ a {
   margin-top: 0;
   margin-bottom: $margin;
   padding: 18px 36px;
-  background-color: $frontcolor;
-  color: $backgroundcolor;
+  background-color: var(--frontcolor);
+  color: var(--backgroundcolor);
 }
 .card a{
   color: $primarycolor;
@@ -152,8 +161,8 @@ code {
 hr {
   margin-top: calc($fontsize * 2);
   margin-bottom: calc($fontsize * 2);
-  border-color: $frontcolor;
-  color: $frontcolor;
+  border-color: var(--frontcolor);
+  color: var(--frontcolor);
   border-radius: 4px;
   border: 2px #8888 solid;
 }
@@ -235,8 +244,8 @@ code {
 		right: 0;
     color: $light;
     font-weight: 800;
-    background-color: $frontcolor;
-    background-color: $backgroundcolor;
+    background-color: var(--frontcolor);
+    background-color: var(--backgroundcolor);
     font-size: 13px;
     padding: 5px 15px 5px 15px;
     text-transform: uppercase;
@@ -258,7 +267,7 @@ code {
     width: 100dvw;
     margin-top: -30px;
     height: 120px;
-    background-image: linear-gradient(to bottom, $backgroundcolor,$backgroundcolor, #0000);
+    background-image: linear-gradient(to bottom, var(--backgroundcolor),var(--backgroundcolor), #0000);
     pointer-events: none;
   }
   .menuitem{
@@ -285,8 +294,8 @@ code {
   .nav a {
     padding: 0px 2px;
     border-radius: 2px;
-    color: $backgroundcolor;
-    color: $frontcolor;
+    color: var(--backgroundcolor);
+    color: var(--frontcolor);
     text-decoration: 1px underline dotted #8888;
   &:hover {
     color: $primarycolor;
