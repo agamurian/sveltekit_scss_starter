@@ -1,8 +1,37 @@
-<div class="uptop"/>
-<div class="nav top">
+<script>
+  let lastScrollTop = 0;
+  let hideNav = $state(false)
+  let marginTop = $state(0)
 
+
+	import NavbarMenu from './NavbarMenu.svelte';
+</script>
+
+<svelte:window
+	on:scroll={() => {
+		let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		if (scrollTop > lastScrollTop) {
+			hideNav = true;
+		} else hideNav = false;
+    lastScrollTop = scrollTop;
+    if(hideNav){
+      marginTop = -100;
+    }else{
+      marginTop = 0;
+    }
+	}}
+/>
+
+<div class="uptop"/>
+<div class="nav top" style="margin-top: {marginTop}px">
   <div class="left">
     <ul>
+
+			{#each menu as item}
+				<a class="mx-5" class:active-route={item.href == $page.route.id} href={item.href}
+					>{item[$lang]}</a
+				>
+			{/each}
       <li>
         <a href="/">main</a>
       </li>
@@ -52,8 +81,8 @@
       </li>
     </ul>
     </div>
-    <!--
   <div class="overdrop"><a href="/">projects</a> > <a href="/">current title</a> > <a href="/">svelte</a>
+      <!--
     <div class="cards">
       <div class="blockcard">
         <h4>
@@ -62,8 +91,8 @@
         <p>
           Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web development. It is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin. The first two words are the truncation of dolorem ipsum. Lorem ipsum's purpose is to permit a page layout to be designed, independently of the copy that will subsequently populate it, or to demonstrate various fonts of a typeface without meaningful text that could be distracting
         </p>
-      </div>
+        </div>
     </div>
+      -->
   </div>
-    -->
 </div>
