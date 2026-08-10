@@ -1,10 +1,10 @@
 # Sveltekit | Scss | MdSvex starter pack
 
 #### How dows it look:
-![screenshot](src.png)
+![screenshot](static/src.png)
 
 #### How dows it prints / saves as pdf:
-![screenshot](src_print.png)
+![screenshot](static/src_print.png)
 
 ## Developing
 

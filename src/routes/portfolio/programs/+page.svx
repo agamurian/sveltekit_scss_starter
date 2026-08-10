@@ -1,12 +1,70 @@
+<div class="flex top card">
+<div class="left">
 
-# Portfolio
-###### some examples of work from previous expirience
+##### Book Template Generator
+</div>
+<div class="center"/>
+<div class="right">
+<br/>
+<br/>
+^
+</div>
+</div>
+<br/>
+<div class="flex top card">
+<div class="left">
 
-### Tools:
-##### blender animation addon:
+##### Book Template Generator
+</div>
+<div class="center"/>
+<div class="right">
+<br/>
+<br/>
+^
+</div>
+</div>
+<br/>
+<div class="flex top card">
+<div class="left">
 
-##### blender validation addon:
+##### Book Template Generator
+</div>
+<div class="center"/>
+<div class="right">
+<br/>
+<br/>
+^
+</div>
+</div>
+<br/>
+<div class="flex top card">
+<div class="left">
 
-##### 3Dsmax qt script installer
+##### Book Template Generator
+</div>
+<div class="center"/>
+<div class="right">
+<br/>
+<br/>
+^
+</div>
+</div>
 
-##### 
+<a href="https://book.agamurian.com">
+  <div class="cardcode">
+  <br/>
+    <div class="flex">
+      <div class="blockcard">
+        <img src="/src_print.png" style="max-width:100%;height:auto;"/>
+      </div>
+      <div class="blockcard">
+
+#### Book.Agamurian.Com
+        <br/>
+        <p>
+        mockup generator for book renders
+        </p>
+      </div>
+    </div>
+  </div>
+</a>

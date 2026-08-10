@@ -66,7 +66,6 @@ $containerfull: 100%;
   padding-top: 0px;
   margin: auto;
   max-width: $containerw1;
-  overflow: hidden;
   gap:0;
   transition: 0;
 }
@@ -112,13 +111,17 @@ a {
 }
 .card {
   flex:1;
-  border: $borderwifth $bordercolor solid;
+  border: $borderwifth var(--backgroundcolor) solid;
   border-radius: $rounded;
   margin-top: 0;
   margin-bottom: $margin;
   padding: 18px 36px;
-  background-color: var(--frontcolor);
-  color: var(--backgroundcolor);
+  color: var(--frontcolor);
+  background-color: var(--backgroundcolor);
+  box-shadow: 0px 3px 15px 1px #0001;
+  margin-left: 50px;
+  margin-right: 50px;
+  transition: 0;
 }
 .card a{
   color: $primarycolor;
@@ -292,7 +295,6 @@ code {
     line-height: 2.0;
     font-family: $sans;
     color: black;
-  transition: 0.35s ease;
   }
   .bottom{
 		bottom: 0;
@@ -346,7 +348,6 @@ code {
     max-width: calc($containerw1 + $margin);
     margin:auto;
     backdrop-filter: blur(10px);
-  transition: 0.35s ease;
   line-height: 1.0;
   }
   .nav a {
@@ -387,6 +388,7 @@ code {
 		margin-right: 6px;
     font-family: $sans;
 		margin: 0px;
+    text-wrap: nowrap;
 	}
 	.right {
 		flex: 0;

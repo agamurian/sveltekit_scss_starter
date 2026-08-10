@@ -20,7 +20,6 @@ let urs = $derived.by(() => {
 
   function toggleTheme() {
     document.documentElement.classList.toggle('dark-theme');
-    console.log("t")
     localStorage.setItem(
       'theme',
       document.documentElement.classList.contains('dark-theme') ? 'dark' : 'light'
