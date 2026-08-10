@@ -1,23 +1,52 @@
-# Andrey Golovin
-**Technical Artist — Tools & Pipeline**
 
-Belgrade, Serbia | +381 64 148 6124
+## Blog:
 
-ag-3d@ya.ru | [linkedin.com/in/agamura](https://linkedin.com/in/agamura) | [agamurian.com](https://agamurian.com) | [@agamurian](https://t.me/agamurian)
+<br/>
 
----
+various topics covered over the things wich bother me
 
-## Cover Letter
 
-Dear Hiring Team,
+<div class="">
 
-I'm applying for the Technical Artist role at SuperPlay.
+## Latest in the Blog:
+<br/>
 
-My work has consistently sat at the intersection of art, engine, and tooling — which is exactly the bridge this role asks for. I have around two years of Unity/C# development experience, shader work in HLSL and URP, and a strong pipeline-tooling background: at Wargaming, BLACKHUB Games, and AvaCapo, I built Python-based tools and plugin systems aimed at cutting manual work, catching errors before they hit a build, and speeding up asset delivery. At ChillBase, I worked mobile production specifically — validating incoming assets and troubleshooting engine integration under mobile constraints. At Immerse Lab, I handled rigging, animation setup, import/export pipelines, and shipped VR/XR features in Unity, while also owning documentation and onboarding for the art pipeline.
+<a href="/blog/functional_programming" class="articlelinkdark">
 
-I don't have hands-on Spine experience, and my VFX/physics-simulation work has been lighter than the shader and rigging side — worth flagging directly rather than glossing over. What I do bring solidly is the GPU optimization, tool-building, and cross-discipline collaboration this role centers on, plus real production experience shipping under performance and memory constraints.
+##### Functional Programming:
+how simple data transformation aalongeside with ddd works great
+```
+03.03.2022
+```
+</a>
 
-My portfolio is at agamurian.com if you'd like to see examples of the tooling and shader work directly.
+<hr/>
 
-Best regards,
-Andrey Golovin
+<a href="/blog/on_new_in_python" class="articlelinkdark">
+
+##### On new in Python:
+pattern matching, for loops instead of recurions
+```
+03.03.2022
+```
+</a>
+<hr/>
+
+<a href="/blog/pitrure" class="articlelinkdark">
+
+##### Picture:
+various pictures
+```
+03.03.2022
+```
+</a>
+<hr/>
+
+<a href="/blog/on_games" class="articlelinkdark">
+
+##### On Gamess:
+all about specific part of human endevour
+```
+03.03.2022
+```
+</div>

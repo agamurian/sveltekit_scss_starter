@@ -139,7 +139,7 @@ a {
   flex:1;
   font-size: calc($fontsize * 0.75);
   @media print{
-    break-inside: awoid;
+    break-inside: avoid;
   }
 }
 code {
@@ -198,6 +198,14 @@ line-height: .1;
 gap:0;
 color: $light;
 text-decoration: underline dotted 2px #fff2;
+
+}
+.articlelinkdark{
+
+line-height: .1;
+gap:0;
+color: var(--frontcolor);
+text-decoration: underline dotted 2px #8888;
 
 }
 h1 {

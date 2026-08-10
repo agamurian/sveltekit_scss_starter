@@ -1,0 +1,55 @@
+# Functional Programming
+##### 03.03.2012
+
+
+---
+
+##  Why
+
+because you can just:
+
+<div class="cardcode">
+
+```
+some code
+```
+</div>
+
+##  When
+
+when you are sure
+
+##  How
+
+look here:
+<div class="cardcode">
+
+```
+some code
+```
+</div>
+
+##  Examples
+
+because
+look here:
+<div class="cardcode">
+
+```
+some code
+```
+</div>
+look here:
+<div class="cardcode">
+
+```
+some code
+```
+</div>
+look here:
+<div class="cardcode">
+
+```
+some code
+```
+</div>

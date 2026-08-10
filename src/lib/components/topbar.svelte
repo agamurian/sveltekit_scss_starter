@@ -98,7 +98,7 @@ let urs = $derived.by(() => {
     </ul>
     </div>
     <div class="overdrop">
-        <a href="/">Home</a>
+        <a href="/">/</a>
         {#each urs as ur}
           / 
         <a href="{ur.url}">{ur.text}</a>
