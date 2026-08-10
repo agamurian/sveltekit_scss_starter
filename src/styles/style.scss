@@ -89,6 +89,10 @@ body{
   padding: $margin;
   padding-top: calc(50px + $margin);
   margin-top: 10px;
+  @media print{
+    margin-top: 0px;
+    padding-top: 0;
+  }
 }
 a {
   transition: 0.35s ease;
@@ -467,7 +471,14 @@ code {
     border-bottom: 2px solid #0003;
   }
   }
+media print{
+  body{
+  margin-top: 0;
+  padding-top: 0;
+}
+}
   section{
+  margin: calc($margin) 0;
   @media print{
     page-break-inside:avoid;
     break-inside:avoid;
@@ -475,6 +486,8 @@ code {
   }
 
 @page {
+  padding-top: calc($margin * 1.5);
+  padding-bottom: calc($margin);
   /*
   &:left {
     margin-left: 1.5in; [> For binding <]
@@ -482,7 +495,6 @@ code {
   &:right {
     margin-right: 1.25in; [> Balanced layout <]
   }
-  margin: 1in;
   /* size: A3;  /* Explicit page size */
 }
 
