@@ -91,8 +91,7 @@ body{
   margin-top: 10px;
   @media print{
     margin-top: 0px;
-    padding-top: 0;
-  }
+    padding-top: 0px;
 }
 a {
   transition: 0.35s ease;
@@ -471,11 +470,6 @@ code {
     border-bottom: 2px solid #0003;
   }
   }
-media print{
-  body{
-  margin-top: 0;
-  padding-top: 0;
-}
 }
   section{
   margin: calc($margin) 0;
@@ -486,8 +480,6 @@ media print{
   }
 
 @page {
-  padding-top: calc($margin * 1.5);
-  padding-bottom: calc($margin);
   /*
   &:left {
     margin-left: 1.5in; [> For binding <]
