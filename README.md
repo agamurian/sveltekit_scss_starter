@@ -29,6 +29,7 @@ You can preview the production build with `npm run preview`.
 
 ---
 
-```adapter-static``` is used, but adapter-node is possible also.
+##### ```adapter-static``` is used, but ```adapter-node``` is possible also.
+
 this is static site generator.
 pages are prenrendered, hot reloading and best ever dx
