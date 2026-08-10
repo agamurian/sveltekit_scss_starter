@@ -50,7 +50,7 @@ let urs = $derived.by(() => {
 	}}
   />
 
-  <div class="uptop" style="margin-top: calc({marginTop}px - 50px)" />
+  <div class="uptop" style="margin-top: calc({marginTop}px - 40px)" />
 <div class="nav top" style="margin-top: {marginTop}px">
   <div class="left">
     <ul>

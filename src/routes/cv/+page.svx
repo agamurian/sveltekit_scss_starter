@@ -1,4 +1,3 @@
-
 # Andrey Golovin
 **Technical Artist — Tools & Pipeline**
 
