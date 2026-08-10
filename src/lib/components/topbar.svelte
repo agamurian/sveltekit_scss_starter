@@ -42,15 +42,15 @@ let urs = $derived.by(() => {
 		} else hideNav = false;
     lastScrollTop = scrollTop;
     if(hideNav){
-      marginTop = -100;
+      marginTop = -120;
     }else{
-      marginTop = 0;
+      marginTop = -10;
     }
 	}}
   />
 
-  <div class="uptop" style="margin-top: calc({marginTop}px - 40px)" />
-<div class="nav top" style="margin-top: {marginTop}px">
+  <div class="uptop" style="margin-top: calc({marginTop}px - 30px)" />
+  <div class="nav top" style="margin-top: {marginTop}px; transition: 0.3s ease">
   <div class="left">
     <ul>
 
@@ -86,14 +86,13 @@ let urs = $derived.by(() => {
     </div>
     -->
   </div>
-  <div class="right">
+  <div class="right" >
     <ul>
-      <li>
-        <a href="javascript:if(window.print)window.print()">print</a>
-      </li>
-      <li>
-        <a href="#" onclick={(e) => { e.preventDefault(); toggleTheme(); }}>theme</a>
-      </li>
+      <nobr>
+      <a href="javascript:if(window.print)window.print()"> 🖨 PDF </a>
+      &nbsp
+      <a href="#" onclick={(e) => { e.preventDefault(); toggleTheme(); }}> 🌗 </a>
+    </nobr>
     </ul>
     </div>
     <div class="overdrop">
