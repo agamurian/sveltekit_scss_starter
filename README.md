@@ -2,7 +2,7 @@
 
 ![screenshot](src.png)
 
-![screenshot](src-print.png)
+![screenshot](src_print.png)
 
 To recreate this project with the same configuration:
 
