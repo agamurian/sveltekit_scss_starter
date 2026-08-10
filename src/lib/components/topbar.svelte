@@ -6,7 +6,7 @@
 	import { page } from '$app/stores';
   import { onMount } from 'svelte';
  // let urs = $state([{text:"/",url:"/"}])
-let curr = $derived($page.url.toString().split("/").slice(3))
+  let curr = $derived($page.url.toString().split("/").slice(3))
 
 let urs = $derived.by(() => {
   let prev = ""
@@ -98,7 +98,7 @@ let urs = $derived.by(() => {
     </ul>
     </div>
     <div class="overdrop">
-        <a href="/">/</a>
+        <a href="/">~</a>
         {#each urs as ur}
           / 
         <a href="{ur.url}">{ur.text}</a>
