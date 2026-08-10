@@ -1,7 +1,8 @@
 # Sveltekit + Bun + Scss starter pack
 
-![screenshot](scr.png)
-![screenshot](scr-print.png)
+![screenshot](src.png)
+
+![screenshot](src-print.png)
 
 To recreate this project with the same configuration:
 
