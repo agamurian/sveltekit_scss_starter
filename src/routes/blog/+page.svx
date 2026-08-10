@@ -32,7 +32,7 @@ pattern matching, for loops instead of recurions
 </a>
 <hr/>
 
-<a href="/blog/pitrure" class="articlelinkdark">
+<a href="/blog/picture" class="articlelinkdark">
 
 ##### Picture:
 various pictures

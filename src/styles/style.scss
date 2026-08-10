@@ -23,7 +23,7 @@ $neutral: #8888;
 $bordercolor: $light;
 
 $borderwifth: 2px;
-$rounded: 10px;
+$rounded: 3.5px;
 
 //$sans: "Rubik";
 //$sans: "Bricolage Grotesque";
@@ -436,10 +436,8 @@ code {
     break-inside:avoid;
   }
   }
+
 @page {
-  &:first{
-    margin-top: 2in;
-  }
   /*
   &:left {
     margin-left: 1.5in; [> For binding <]
