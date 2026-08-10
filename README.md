@@ -1,15 +1,10 @@
-# Sveltekit + Bun + Scss starter pack
+# Sveltekit | Scss | MdSvex starter pack
 
+#### How dows it look:
 ![screenshot](src.png)
 
+#### How dows it prints / saves as pdf:
 ![screenshot](src_print.png)
-
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-bun x sv@0.16.2 create --template minimal --types ts --add prettier eslint sveltekit-adapter="adapter:node" mcp="ide:claude-code,gemini,opencode+setup:local" experimental="versions:kit+features:async,remoteFunctions,explicitEnvironmentVariables,handleRenderingErrors,forkPreloads" --install bun frontend
-```
 
 ## Developing
 
@@ -32,4 +27,6 @@ bun run build
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+---
+
+static
