@@ -1,3 +1,7 @@
+<script>
+	import favicon from '$lib/assets/favicon.webp';
+</script>
+
 <div class="flex top card">
 <div class="left">
 
