@@ -1,7 +1,9 @@
 $light: #ffffff;
 $dark: #1d1d1d;
-$secondarycolor: #3a5010;
-$primarycolor: #5b6f4e;
+$secondarycolor: #719f91;
+$primarycolor: #8a908a;
+$secondarycolor: #b98769;
+$primarycolor: #897666;
 
 $backgroundcolor: $light;
 $frontcolor: $dark;
@@ -113,14 +115,15 @@ a {
   flex:1;
   border: $borderwifth var(--backgroundcolor) solid;
   border-radius: $rounded;
+  padding: 0 $margin/2;
+  color: var(--frontcolor);
+  background-color: #8881;
+  border: 3px solid #8880;
   margin-top: 0;
   margin-bottom: $margin;
-  padding: 18px 36px;
-  color: var(--frontcolor);
-  background-color: var(--backgroundcolor);
-  box-shadow: 0px 3px 15px 1px #0001;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 0;
+  margin-right: 0;
+
   transition: 0;
 }
 .card a{
@@ -136,7 +139,7 @@ a {
   margin: auto;
   margin-top: 0;
   margin-bottom: $margin;
-  padding: 18px 24px;
+  padding:calc($margin/3) calc($margin/1.5) calc($margin/3) calc($margin/1.5);
   background-color: #000d;
   color: $light;
   flex:1;
@@ -176,7 +179,9 @@ p {
   font-family: $basefont;
   text-align: justify;
   margin-top:calc($fontsize/2);
+  margin-top:0;
   margin-bottom:calc($fontsize/2);
+  margin-bottom:0;
 }
 ul {
   line-height: $height; 
@@ -261,6 +266,28 @@ h6 {
   text-emphasis: none;
   text-align: right;
 }
+h1 h2 h3 h4 h5 h6{
+  padding:2px;
+  box-sizing: border-box;
+  border-radius: $rounded;
+  transition: .75s ease;
+  background-color: #0000;
+  &:hover{
+    background-color: $primarycolor;
+  }
+}
+.wsm{
+  box-sizing: border-box;
+max-width: 240px;
+}
+.wmd{
+  box-sizing: border-box;
+max-width: 480px;
+}
+.wbg{
+  box-sizing: border-box;
+max-width: 660px;
+}
 
 code {
   font-family: $monospace;
@@ -341,8 +368,8 @@ code {
     display:none 
     }
 		top: 20px;
-    left: 20px;
-    right: 20px;
+    left: 0;
+    right: 0;
     border-radius: $rounded;
     max-width: 100%;
     max-width: calc($containerw1 + $margin);
@@ -422,15 +449,21 @@ code {
   transition: 0.35s ease;
     padding: 10px 15px;
     background-color: $primarycolor;
-    &:hover{
-    background-color: $secondarycolor;
-  }
     color: $light;
 		bottom: 0;
     font-family: $sans;
     font-size: $fontsize;
     font-weight: 500;
     border-radius: calc($rounded/2);
+    border-top: 2px solid #fff2;
+    border-bottom: 2px solid #0001;
+    text-decoration: none;
+    &:hover{
+    background-color: $secondarycolor;
+    box-shadow: 0px 4px 24px -8px #888a;
+    border-top: 2px solid #fff4;
+    border-bottom: 2px solid #0003;
+  }
   }
   section{
   @media print{

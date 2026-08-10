@@ -49,7 +49,7 @@ Technical Artist with 6+ years of experience building and maintaining art pipeli
 <br/>
 
 <div class="flex">
-<div class="blockcard">
+<div class="blockcard wsm">
 
 #### CV:
 <br/>
@@ -60,7 +60,7 @@ Technical Artist with 6+ years of experience building and maintaining art pipeli
 <br/>
 
 
-<a href="/Andrey_Golovin_CV.pdf">
+<a href="/Andrey_Golovin_CV.pdf"  class="articlelink">
 <span class="button">
 download PDF
 </span></a>
@@ -69,7 +69,7 @@ download PDF
 
 </div>
 
-<div class="blockcard">
+<div class="blockcard wsm">
 
 #### Portfolio:
 <br/>
@@ -80,7 +80,7 @@ per projects brief showroom
 </h6>
 </a>
 <br/>
-<a href="/Andrey_Golovin_CV.pdf">
+<a href="/Andrey_Golovin_Portfolio.pdf"  class="articlelink">
 <span class="button">
 download PDF
 </span></a>
@@ -89,27 +89,14 @@ download PDF
 
 
 </div>
-<a href="/blog" >
-<div class="cardcode" style="max-width:500px;margin-left:0;">
 
-#### Blog:
-<br/>
+<div class="blockcard wbg" style="width:100%;margin-left:0;">
 
-various topics covered over the things wich bother me
-
-</div>
-</a>
-
-</div>
-
-### Featured:
-<br>
-
+###### Featured:
 <a href="/typography" >
-<div class="cardcode" style="max-width:500px;margin-left:0;">
+<div class="cardcode" >
 
 #### Typography:
-<br/>
 
 Fonts and spaces
 ```
@@ -117,6 +104,9 @@ Fonts and spaces
 ```
 </div>
 </a>
+</div>
+</div>
+
 
 ### Latest in <a href="/blog">The Blog</a>:
 <br/>
