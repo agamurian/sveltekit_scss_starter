@@ -80,7 +80,7 @@ per projects brief showroom
 </h6>
 </a>
 <br/>
-<a href="/Andrey_Golovin_CV_H.pdf"  class="articlelink">
+<a href="/Andrey_Golovin_Portfolio.pdf"  class="articlelink">
 <span class="button">
 download PDF
 </span></a>
@@ -159,9 +159,4 @@ all about specific part of human endevour
 
 </div>
 </div>
-
-
-
-#### Latest in the Blog:
-
 
