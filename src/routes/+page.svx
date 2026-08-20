@@ -16,7 +16,7 @@ Hi, Its Andrey,<br/> artist and engineer.
 <br/>
 
 Technical Artist with 6+ years of experience building and maintaining art pipelines for game production. Strong Tool Development background across Blender, 3ds Max, and Maya, with hands-on experience automating asset conversion/validation, integrating content into custom and proprietary game engines, and mentoring junior artists. Comfortable working without off-the-shelf DCC-to-engine plugins, building tools from scratch.
-
+<br/>
 </div>
 
 <div class="blockcard">
